@@ -324,9 +324,9 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 **Extensions**
 
-* 1a. Class name is not specified.
+* 1a. User did not specify the class.
 
-  * 1a1. EduTrack informs user that class name is empty.
+    * 1a1. EduTrack informs user that class name is not specified in request.
 
       Use case ends.
 
@@ -346,10 +346,9 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 2.  EduTrack shows a list of classes
 3.  User requests to delete a specific class in the list
 4.  EduTrack requests for confirmation and waits for y/n response from user
-5.  User confirms
+5.  User enters y/n to confirm
 6.  EduTrack deletes the class
 7.  EduTrack informs the user that the class is successfully deleted
-
 
     Use case ends.
 
@@ -360,13 +359,11 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
     Use case ends.
 * 2a. User did not specify the class.
   * 2a1. EduTrack informs user that class name is not specified in request.
-  * 2a2. EduTrack terminates the request.
 
     Use case ends.
 
 * 2b. EduTrack detects that the class does not exist.
   * 2b1. EduTrack informs user that the class does not exist.
-  * 2b2. EduTrack terminates the request.
 
     Use case ends.
 
@@ -397,7 +394,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
     Use case ends.
 
-**Use case: Updating a Class note**
+**Use case: Update a class note**
 
 **MSS**
 
@@ -441,9 +438,8 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
     Use case ends.
 
 **Extensions**
-* 1a. Class name is not specified.
-
-    * 1a1. EduTrack informs user that class name is empty.
+* 1a. User did not specify the class.
+    * 1a1. EduTrack informs user that class name is not specified in request.
 
       Use case ends.
 
@@ -473,7 +469,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 ---
 
-**Use case: Adding a lesson to a Class Schedule**
+**Use case: Add a lesson**
 
 **MSS**
 
@@ -511,7 +507,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 ---
 
-**Use case: Removing a lesson from a class schedule**
+**Use case: Remove a lesson**
 
 **MSS**
 
@@ -545,7 +541,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 ---
 
-**Use case: Take attendance in a lesson**
+**Use case: Take attendance**
 
 **MSS**
 
@@ -592,25 +588,22 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 * 2a. User did not specify the class.
     * 2a1. EduTrack informs user that class name is not specified in the request.
-    * 2a2. EduTrack terminates the request.
 
       Use case ends.
 
 * 2b. EduTrack detects that the student is not found in the class.
     * 2b1. EduTrack informs user that student is not found in class.
-    * 2b2. EduTrack terminates the request.
 
       Use case ends.
 
 * 2c. EduTrack detects that the class does not exist.
     * 2c1. EduTrack informs user that the class does not exist.
-    * 2c2. EduTrack terminates the request.
 
       Use case ends.
 
 ---
 
-**Use case: Update a class**
+**Use case: Update a student**
 
 **MSS**
 1. User requests to modify an existing student record in a class.
@@ -626,7 +619,6 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 * 1a. EduTrack detects that student or class does not exist.
     * 1a1. EduTrack informs the user that the student or the class does not exist.
-    * 1a2. EduTrack terminates the request.
 
       Use case ends.
 
