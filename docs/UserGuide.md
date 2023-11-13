@@ -22,8 +22,8 @@ If you are an **experienced user** of EduTrack, click [here](#command-summary) t
 
 ## Table of Contents
 
-1. [Quick start](#quick-start)
-2. [About](#about)
+1. [**Quick start**](#quick-start)
+2. [**About**](#about)
    - [EduTrack's Graphical User Interface](#edutrack-s-graphical-user-interface)
    - [Structure of this user guide](#structure-of-this-user-guide)
    - [Reading this user guide](#reading-this-user-guide)
@@ -31,15 +31,15 @@ If you are an **experienced user** of EduTrack, click [here](#command-summary) t
      - [Common terms](#common-terms)
      - [Command format](#command-format)
      - [Command parameters](#command-parameters)
-3. [Features](#features)
+3. [**Features**](#features)
    - [Class commands](#class-commands)
      - [Listing all classes : `list`](#listing-all-classes-list)
      - [Adding a class : `add /c`](#adding-a-class-add-c)
      - [Removing a class : `remove /c`](#removing-a-class-remove-c)
      - [Viewing a class : `view /c`](#viewing-a-class-view-c)
-     - [Editing a class: `edit /c`](#editing-a-class-edit-c)
+     - [Editing a class : `edit /c`](#editing-a-class-edit-c)
      - [Starting a lesson : `startlesson /c`](#starting-a-lesson-startlesson-c)
-     - [Setting number of lessons of a class: `setlesson /c`](#setting-number-of-lessons-of-a-class-setlesson-c)
+     - [Setting number of lessons of a class : `setlesson /c`](#setting-number-of-lessons-of-a-class-setlesson-c)
    - [Student commands](#student-commands)
      - [Adding a student : `add /s`](#adding-a-student-add-s)
      - [Removing a student : `remove /s`](#removing-a-student-remove-s)
@@ -52,12 +52,12 @@ If you are an **experienced user** of EduTrack, click [here](#command-summary) t
      - [Exiting the program : `exit`](#exiting-the-program-exit)
      - [Clearing all entries : `clear`](#clearing-all-entries-clear)
      - [Saving the data](#saving-the-data)
-4. [FAQ](#faq)
-5. [Known issues](#known-issues)
-6. [Command summary](#command-summary)
-7. [Glossary](#glossary)
+4. [**FAQ**](#faq)
+5. [**Known issues**](#known-issues)
+6. [**Command summary**](#command-summary)
+7. [**Glossary**](#glossary)
 
----
+<div style="page-break-after: always;"></div>
 
 ## Quick start
 
@@ -79,9 +79,9 @@ If you are an **experienced user** of EduTrack, click [here](#command-summary) t
    - `add /s John /c 1` : Adds a student named "John" to the first class in the class list.
    - `remove /c 1` : Removes the first class in the class list.
    - `exit` : Exits the app.
-6. Refer to the [Features](#features) for more details of each command.
+6. Refer to the [Features](#features) section for more details of each command.
 
----
+<div style="page-break-after: always;"></div>
 
 ## About
 
@@ -112,6 +112,8 @@ EduTrack's [GUI](#glossary) is designed with simplicity and efficiency in mind, 
 * If changes are made to a student in another class while you are [viewing a class](#viewing-a-class--view-c), the `UI` will update to show you the other class' students.
 
 </box>
+
+<br>
 
 ### Structure of This User Guide
 
@@ -234,8 +236,16 @@ Adds a new class to your list of classes. You can manage multiple classes at onc
 **Command Format:** `add /c CLASS_NAME`
 
 **Examples:**
-* `add /c cs2103t` : Adds a new class named "CS2103T".
-* `add /c st2334` : Adds a new class named "ST2334".
+
+<blockquote color="red">
+
+Nested blockquote
+
+</blockquote>
+
+> `add /c st2334` :
+>
+> Adds a new class named "ST2334".
 
 **Sample Usage:**
 
